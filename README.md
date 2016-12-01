@@ -1,18 +1,18 @@
 ## Background
 
-In a podcast episode of [Reply All](https://gimletmedia.com/episode/the-anxiety-box/), host PJ Vogt interviews [Paul Ford](https://twitter.com/ftrain) about a project of his that helped him cope with his anxiety, a website called [Anxiety Box](http://anxietybox.com/).  The way the website works is you enter you name, email and what you are anxious about.  The site would then randomly send you an email with your anxiety.  The process of putting your anxiety out there, then reading it at a later time sometimes shows you how silly or trivial they are.  Responding to them or deleting them is empowering.
-
-I was inspired by Paul's project and thought it would also fit perfectly on the Alexa platform.  Alexa is not only convenient but also turns the interaction into a conversation, makes the bot aspect a bit more tangible.  
-
+Inspired by [Paul Ford's](https://twitter.com/ftrain) [AnxietyBox](http://anxietybox.com/), Anxiety Bot explores his concept on Alexa.  Read more at [hackster.io](https://www.hackster.io/michael-myers/anxiety-bot-let-a-robot-take-care-of-them-for-you-8f915d).
+  
 ## Design
 
-Anxiety Bot is a Lambda function that uses DynamoDB to remember the user's phone number and verification status.  It uses the [Alexa Skills Kit SDK](https://github.com/alexa/alexa-skills-kit-sdk-for-nodejs) for interacting with Alexa Skills Kit, the [Bespoken Tools SDK](https://github.com/bespoken/bst) for logging, and [Twilio](https://www.twilio.com/) for SMS.     
+Anxiety Bot is a Lambda function that uses DynamoDB to remember the user's phone number and verification status.  It uses the [Alexa Skills Kit SDK](https://github.com/alexa/alexa-skills-kit-sdk-for-nodejs) for interacting with Alexa Skills Kit, the [Logless SDK](https://bespoken.tools/logless) for logging, and [Twilio](https://www.twilio.com/) for SMS.     
 
 ## Requirements
 
 * node.js & npm
 * bst cli installed
-* bespoken tools secret keey (http://bespoken.tools)
+  * `$ npm install -g bespoken-tools`
+* bespoken tools secret key https://bespoken.tools/dashboard
+* Twilio Account https://twilio.com
 * AWS Credentials for deploy (you can still run bst proxy)
 
 ## Setup
