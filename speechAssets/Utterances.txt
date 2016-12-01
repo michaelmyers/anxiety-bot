@@ -1,0 +1,14 @@
+GetPhoneNumberIntent setup a new phone number
+GetPhoneNumberIntent register a new phone number
+GetPhoneNumberIntent phone number
+
+PhoneNumberInputIntent my phone number is {PhoneNumber}
+PhoneNumberInputIntent {PhoneNumber}
+
+VerifyPhoneNumberIntent my verification code is {Adjective} {Noun} 
+VerifyPhoneNumberIntent {Adjective} {Noun}
+
+NewAnxietyIntent my anxiety is {CatchAll}
+NewAnxietyIntent my anxiety is that {CatchAll}
+NewAnxietyIntent {CatchAll}
+

@@ -1,0 +1,31 @@
+{
+  "name": "anxious-bot",
+  "version": "1.0.0",
+  "description": "An Alexa Skill based on http://anxietybox.com/ by Paul Ford",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/"
+  },
+  "keywords": [
+    "anxiety bot",
+    "alexa",
+    "skill",
+    "bespoken tools",
+    "twilio"
+  ],
+  "author": "Michael Myers",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/"
+  },
+  "homepage": "https://github.com/",
+  "dependencies": {
+    "alexa-sdk": "^1.0.6",
+    "bespoken-tools": "^0.9.15",
+    "twilio": "^2.11.1"
+  }
+}

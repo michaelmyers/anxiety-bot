@@ -1,0 +1,31 @@
+{
+  "intents": [
+    {
+      "intent": "NewAnxietyIntent",
+      "slots": [{
+            "name": "CatchAll",
+            "type": "CATCH_ALL"
+        }]
+    },
+    {
+      "intent": "GetPhoneNumberIntent"
+    },
+    {
+      "intent": "PhoneNumberInputIntent",
+      "slots": [{
+          "name": "PhoneNumber",
+          "type": "AMAZON.NUMBER"
+      }]
+    },
+    {
+      "intent": "VerifyPhoneNumberIntent",
+      "slots": [{
+        "name": "Adjective",
+        "type": "ADJECTIVE"
+      },{
+        "name": "Noun",
+        "type": "NOUN"
+      }]
+    }
+  ]
+}
