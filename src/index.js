@@ -70,7 +70,14 @@ var handlers = {
             console.log(this.attributes);
             console.log(this.event.request.intent.slots.CatchAll);
             // setup a lambda to fire at a random time
-            this.emit(":tell", "Don't worry, I have stored it away.");  // make this random
+            this.emit(":tell", "Don't worry, I will hold on to that for you.");  // make this random
+
+            phone.sendSMS(self.attributes.phoneNumber,
+            config.twilio.fromNumber, this.event.request.intent.slots.CatchAll.value, function(err, message) {
+                console.log("Message sent");
+                console.log(err);
+                console.log(message);
+            });
         }
     },
     'Unhandled': function () {
